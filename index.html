@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Nicole Orellana</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="assets/style/style.css" rel="stylesheet">
+    <!-- ESTILOS CSS -->
+</head>
+<body class="bg-gray-50">
+
+    <!-- ========= HEADER / NAVBAR ========= -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home">
+                <img src="assets/img/logo.png" class="logo1" alt="Logo Nicole Orellana">
+            </a>
+
+           <!-- Menú de escritorio -->
+           <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-gray-600 hover:text-[#ef711d] transition-colors">Home</a>
+            <a href="#quien-soy" class="text-gray-600 hover:text-[#ef711d] transition-colors">Quién soy</a>
+            <a href="#trabajos" class="text-gray-600 hover:text-[#ef711d] transition-colors">Mis Trabajos</a>
+            <a href="#contacto" class="bg-[#52c8e6] text-white px-4 py-2 rounded-lg hover:bg-[#ef711d] transition-colors">Contáctame</a>
+        </div>
+
+        <!-- Botón del menú hamburguesa -->
+        <div class="md:hidden">
+            <button id="menu-btn" class="z-50 block hamburger md:hidden focus:outline-none">
+                <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú móvil -->
+    <div id="menu" class="hidden md:hidden">
+        <div class="absolute flex flex-col items-center self-end py-8 mt-2 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-md">
+            <a href="#home" class="text-gray-600 hover:text-[#ef711d]">Home</a>
+            <a href="#quien-soy" class="text-gray-600 hover:text-[#ef711d]">Quién soy</a>
+            <a href="#trabajos" class="text-gray-600 hover:text-[#ef711d]">Mis Trabajos</a>
+            <a href="#contacto" class="text-gray-600 hover:text-[#ef711d]">Contáctame</a>
+        </div>
+    </div>
+</header>
+
+    <!-- ========= CINTA DE SERVICIOS ========= -->
+    <div class="ticker-wrap">
+        <div class="ticker-move">
+            <div class="ticker-item">Marketing</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">UX/UI</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Diseño</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Fotografía</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Marketing</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">UX/UI</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Diseño</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Fotografía</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Marketing</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">UX/UI</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Diseño</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Fotografía</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Marketing</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">UX/UI</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Diseño</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Fotografía</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Marketing</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">UX/UI</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Diseño</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Fotografía</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Marketing</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">UX/UI</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Diseño</div><span class="ticker-separator">✦</span>
+            <div class="ticker-item">Fotografía</div><span class="ticker-separator">✦</span>
+        </div>
+    </div>
+
+    <!-- ========= SECCIÓN HOME (BANNER) ========= -->
+    <section 
+        id="home" 
+        class="relative min-h-screen flex items-center justify-center overflow-hidden"
+        style="
+            background-image: url('https://i.postimg.cc/wBbCJRv4/papel.png');
+            background-size: cover;
+            background-position: center;
+        "
+    >
+        <div class="container mx-auto text-center z-10 px-6">
+            <h1 class="animate-on-load text-4xl md:text-6xl font-bold leading-tight" style="color: #0848b0;">
+                <span class="block">Creemos juntos algo</span>
+                <span class="block">increíble en 
+                    <span id="animated-text" class="clave transition-opacity duration-500 ease-in-out">marketing</span>
+                </span>
+            </h1>
+            <p class="animate-on-load text-gray-500 mt-4 text-lg md:text-xl" style="transition-delay: 200ms;">Diseño experiencias digitales que conectan con personas reales.</p>
+        </div>
+
+        <div class="absolute top-1/4 right-1/4 md:right-1/3 lg:right-1/4 w-24 h-24 md:w-32 md:h-32 floating-element opacity-70">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 0 L61.2 38.8 L100 50 L61.2 61.2 L50 100 L38.8 61.2 L0 50 L38.8 38.8 Z" fill="#00c2ff"/>
+            </svg>
+        </div>
+         <div class="absolute bottom-1/4 left-1/4 md:left-1/3 lg:left-1/4 w-16 h-16 floating-element opacity-50" style="animation-delay: -1.5s;">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 0 L61.2 38.8 L100 50 L61.2 61.2 L50 100 L38.8 61.2 L0 50 L38.8 38.8 Z" fill="#00c2ff"/>
+            </svg>
+        </div>
+    </section>
+
+    <main>
+        <!-- SECCIÓN QUIÉN SOY -->
+        <section id="quien-soy" class="py-20 lg:py-24 bg-gradient-to-b from-white to-black">
+            <div class="container mx-auto px-6">
+                <h2 class="animate-on-scroll text-4xl font-bold text-center mb-16"style="color: #0848b0;">Quién <span class="clave" >soy</span></h2> 
+                
+                <div class="animate-on-scroll max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-6 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-16" style="transition-delay: 100ms;">
+                    <img class="w-24 h-24 rounded-full object-cover border-4 border-indigo-200" src="assets/img/avatar1.webp" alt="Foto de Nicole Orellana">
+                    <div class="flex-grow flex items-center justify-between w-full">
+                        <h3 class="text-3xl font-bold " style="color: #0848b0;">Nicole Orellana</h3>
+                        <a href="https://www.linkedin.com/in/nicole-orellana-046668293/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                    <div class="animate-on-scroll bg-white rounded-2xl shadow-lg p-8" style="transition-delay: 200ms;">
+                        <h4 class="text-2xl font-bold mb-6"style="color: #0848b0;"> Experiencia</h4>
+                        <div class="space-y-6">
+                            <div>
+                                <h5 class="font-bold text-lg text-gray-800">KPMG en Chile</h5>
+                                <p class="text-gray-500">Analista de Marketing I 2024</p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg text-gray-800">Honey Dragon</h5>
+                                <p class="text-gray-500"> UX/UI y lanzamiento I 2023 </p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg text-gray-800">Freelancer</h5>
+                                <p class="text-gray-500">Creador de contenido -  Marketing RRSS I 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animate-on-scroll bg-white rounded-2xl shadow-lg p-8" style="transition-delay: 300ms;">
+                        <h4 class="text-2xl font-bold mb-6"style="color: #0848b0;">Preparación</h4>
+                         <div class="space-y-6">
+                            <div>
+                                <h5 class="font-bold text-lg text-gray-800">Duoc UC</h5>
+                                <p class="text-gray-500">Desarrollo y Diseño Web I  2022 - 2024</p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg text-gray-800">Santander Open Academy</h5>
+                                <p class="text-gray-500">Publicidad en RRSS I 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= CINTA DE HERRAMIENTAS ========= -->
+<!-- ========= CINTA DE HERRAMIENTAS ========= -->
+        <div class="tools-ticker-wrap">
+            <div class="tools-ticker-move">
+                <!-- Repite este bloque para un bucle fluido -->
+                <div class="tool-item">
+                    <img src="assets/img/l6.webp" alt="Logo de Visual Studio Code">
+                    <span>VS Code</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l7.webp" alt="Logo de Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l16.webp" alt="Logo de Meta Ads">
+                    <span>Meta Ads</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l1.webp" alt="Logo de Photoshop">
+                    <span>Photoshop</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l2.png" alt="Logo de Illustrator">
+                    <span>Illustrator</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l5.png" alt="Logo de Adobe XD">
+                    <span>XD</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l3.png" alt="Logo de Premiere Pro">
+                    <span>Premiere Pro</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l8.png" alt="Logo de HTML5">
+                    <span>HTML</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l9.png" alt="Logo de CSS3">
+                    <span>CSS</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l10.png" alt="Logo de PHP">
+                    <span>PHP</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l11.png" alt="Logo de JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l13.png" alt="Logo de Tailwind CSS">
+                    <span>Tailwind</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l14.png" alt="Logo de React">
+                    <span>React</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l15.png" alt="Logo de Bootstrap">
+                    <span>Bootstrap</span>
+                </div>
+                
+                <!-- Contenido duplicado para el bucle infinito -->
+                <div class="tool-item">
+                    <img src="assets/img/l6.png" alt="Logo de Visual Studio Code">
+                    <span>VS Code</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l7.png" alt="Logo de Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l16.png" alt="Logo de Meta Ads">
+                    <span>Meta Ads</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l1.png" alt="Logo de Photoshop">
+                    <span>Photoshop</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l2.png" alt="Logo de Illustrator">
+                    <span>Illustrator</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l5.png" alt="Logo de Adobe XD">
+                    <span>XD</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l3.png" alt="Logo de Premiere Pro">
+                    <span>Premiere Pro</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l8.png" alt="Logo de HTML5">
+                    <span>HTML</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l9.png" alt="Logo de CSS3">
+                    <span>CSS</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l10.png" alt="Logo de PHP">
+                    <span>PHP</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l11.png" alt="Logo de JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l13.png" alt="Logo de Tailwind CSS">
+                    <span>Tailwind</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l14.png" alt="Logo de React">
+                    <span>React</span>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/img/l15.png" alt="Logo de Bootstrap">
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+        </div>
+                
+                
+            </div>
+        </div>
+
+ <!-- ========= SECCIÓN MIS TRABAJOS ========= -->
+ <section id="trabajos" class="py-20 lg:py-24">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-bold" style="color: #0848b0;">Conoce mis <span class="clave">trabajos</span></h2>
+        </div>
+
+        <div class="space-y-24">
+            <!-- Tarjeta de Proyecto 1 -->
+            <a href="page1.html" class="project-card bg-white rounded-2xl shadow-xl flex-col md:flex-row items-center overflow-hidden">
+                <div class="md:w-1/2 text-center md:text-left p-8 lg:p-12">
+                    <h3 class="text-3xl font-bold mb-4" style="color: #0848b0;">Currículum digital <br> para directorios KPMG</h3> 
+                    <p class="text-gray-600 text-lg">Diseño y desarrollo del currículum digital para directores en la web oficial de KPMG Chile, brindando una experiencia visual y funcional que permite destacar el perfil profesional de cada directivo, alineando el diseño con los estándares de la marca global.</p>
+                </div>
+                <div class="md:w-1/2 h-full">
+                    <img src="assets/img/p1.jpg" alt="Proyecto KPMG" class="w-full h-full object-cover">
+                </div>
+            </a>
+
+            <!-- Tarjeta de Proyecto 2 -->
+            <a href="page2.html" class="project-card bg-white rounded-2xl shadow-xl flex-col md:flex-row-reverse items-center overflow-hidden">
+                <div class="md:w-1/2 text-center md:text-left p-8 lg:p-12">
+                    <h3 class="text-3xl font-bold mb-4" style="color: #0848b0;">Honey Dragon</h3>
+                    <p class="text-gray-600 text-lg">Diseño y desarrollo de la experiencia digital para el e-commerce de Honey Dragon, incluyendo su lanzamiento y mantenimiento, una plataforma atractiva, funcional y alineada con la estética de la marca, enfocada en mejorar la experiencia de compra del usuario.</p>
+                </div>
+                <div class="md:w-1/2 h-full">
+                    <img src="assets/img/p2.jpg" alt="Proyecto Honey Dragon" class="w-full h-full object-cover">
+                </div>
+            </a>
+
+            <!-- Tarjeta de Proyecto 3 -->
+            <a href="page3.html" class="project-card bg-white rounded-2xl shadow-xl flex-col md:flex-row items-center overflow-hidden">
+                <div class="md:w-1/2 text-center md:text-left p-8 lg:p-12">
+                    <h3 class="text-3xl font-bold mb-4" style="color: #0848b0;">Aigoo Store</h3>
+                    <p class="text-gray-600 text-lg">Rebranding completo de la identidad visual, rediseño y maquetacion de plataforma e-commerce para Aigoo Store, desarrollando una nueva identidad visual coherente, moderna y alineada con su público objetivo.</p>
+                </div>
+                <div class="md:w-1/2 h-full">
+                    <img src="assets/img/p3.jpg" alt="Proyecto Aigoo Store" class="w-full h-full object-cover">
+                </div>
+            </a>
+            
+            <!-- Tarjeta de Proyecto 4 -->
+            <a href="page4.html" class="project-card bg-white rounded-2xl shadow-xl flex-col md:flex-row-reverse items-center overflow-hidden">
+                <div class="md:w-1/2 text-center md:text-left p-8 lg:p-12">
+                    <h3 class="text-3xl font-bold mb-4" style="color: #0848b0;">Gráfica & Estética Visual</h3>
+                    <p class="text-gray-600 text-lg">Diseño visual que potencia tu mensaje. Piezas gráficas para redes, branding, campañas o contenido digital. Cada diseño está pensado para comunicar con claridad, identidad y estilo, alineado con tus objetivos de marca.</p>
+                </div>
+                <div class="md:w-1/2 h-full">
+                    <img src="assets/img/p4.jpg" alt="Proyecto Gráficas" class="w-full h-full object-cover">
+                </div>
+            </a>
+
+            <!-- Tarjeta de Proyecto 5 -->
+            <a href="page5.html" class="project-card bg-white rounded-2xl shadow-xl flex-col md:flex-row items-center overflow-hidden">
+                <div class="md:w-1/2 text-center md:text-left p-8 lg:p-12">
+                    <h3 class="text-3xl font-bold mb-4" style="color: #0848b0;">Videos: Narrativas en Movimiento</h3>
+                    <p class="text-gray-600 text-lg">Piezas audiovisuales con enfoque humano y narrativo. Desde entrevistas laborales y retratos en video hasta campañas sociales para fundaciones, cada pieza fue producida para conectar con la audiencia, comunicar valores e impulsar mensajes clave en redes y medios internos.</p>
+                </div>
+                <div class="md:w-1/2 h-full">
+                    <img src="assets/img/p5.jpg" alt="Proyecto Videos" class="w-full h-full object-cover">
+                </div>
+            </a>
+
+            <!-- Tarjeta de Proyecto 6 -->
+            <a href="page6.html" class="project-card bg-white rounded-2xl shadow-xl flex-col md:flex-row-reverse items-center overflow-hidden">
+                <div class="md:w-1/2 text-center md:text-left p-8 lg:p-12">
+                    <h3 class="text-3xl font-bold mb-4" style="color: #0848b0;">Fotografía con Propósito</h3>
+                    <p class="text-gray-600 text-lg">Retratos corporativos pensados para destacar la identidad profesional de cada persona, ya sea para plataformas como LinkedIn, prensa o comunicaciones internas.</p>
+                </div>
+                <div class="md:w-1/2 h-full">
+                    <img src="assets/img/p6.jpg" alt="Proyecto Fotografía" class="w-full h-full object-cover">
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+ <!-- ========= SECCIÓN CONTACTO ========= -->
+ <section id="contacto" class="relative bg-black text-white py-20 lg:py-32 overflow-hidden">
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12">¡Construyamos algo increíble juntos!</h2>
+            <form action="https://formsubmit.co/nicole.orellana.garcia@gmail.com" method="POST" class="contact-form space-y-8">
+                <input type="text" name="nombre" placeholder="Nombre" class="w-full p-2 text-lg" required>
+                <input type="email" name="email" placeholder="Correo" class="w-full p-2 text-lg" required>
+                <textarea name="mensaje" placeholder="Dime qué necesitas y lo convertimos en una solución creativa." rows="4" class="w-full p-2 text-lg" required></textarea>
+                <button type="submit" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-black transition-colors duration-300">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Formas flotantes decorativas -->
+    <div class="absolute top-20 right-20 w-12 h-12 floating-element hidden md:block">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0 L61.2 38.8 L100 50 L61.2 61.2 L50 100 L38.8 61.2 L0 50 L38.8 38.8 Z" fill="#52c8e6"/>
+        </svg>
+    </div>
+    <div class="absolute bottom-20 left-20 w-16 h-16 floating-element hidden md:block" style="animation-delay: -1.5s;">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0 L61.2 38.8 L100 50 L61.2 61.2 L50 100 L38.8 61.2 L0 50 L38.8 38.8 Z" fill="#52c8e6"/>
+        </svg>
+    </div>
+</section>
+</main>
+</main>
+<!-- ========= FOOTER ========= -->
+<footer style="background-color: #0848b0;" class="text-gray-200 py-2">
+    <div class="container mx-auto px-6 text-right">
+        <p>&copy; 2024 Nicole Orellana</p>
+    </div>
+</footer>
+
+
+    <!-- ENLACE AL ARCHIVO JAVASCRIPT -->
+    <script>
+         // ========= SCRIPT PARA EL MENÚ MÓVIL =========
+         const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const navLinks = document.querySelectorAll('#menu a');
+
+        const toggleMenu = () => {
+            menu.classList.toggle('hidden');
+            btn.innerHTML = menu.classList.contains('hidden')
+                ? `<svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>`
+                : `<svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>`;
+        };
+        
+        if (btn) {
+            btn.addEventListener('click', toggleMenu);
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!menu.classList.contains('hidden')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        const animatedText = document.getElementById('animated-text');
+        if (animatedText) {
+            const words = ["marketing", "diseño", "videos", "fotografía"];
+            let wordIndex = 0;
+            setInterval(() => {
+                animatedText.classList.add('opacity-0');
+                setTimeout(() => {
+                    wordIndex = (wordIndex + 1) % words.length;
+                    animatedText.textContent = words[wordIndex];
+                    animatedText.classList.remove('opacity-0');
+                }, 500);
+            }, 2500);
+        }
+
+        // ========= SCRIPT PARA ANIMACIONES EN GENERAL =========
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animación al cargar la página
+            const loadElements = document.querySelectorAll('.animate-on-load');
+            loadElements.forEach(el => {
+                // Usamos un pequeño timeout para asegurar que la transición ocurra
+                setTimeout(() => {
+                    el.classList.add('is-visible');
+                }, 100);
+            });
+
+            // Animación al hacer scroll
+            const scrollElements = document.querySelectorAll('.project-card, .animate-on-scroll');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2 // La animación se activa cuando el 20% del elemento es visible
+            });
+
+            scrollElements.forEach(el => {
+                if (el.classList.contains('project-card')) {
+                    // Asignar la clase de dirección inicial a las tarjetas de proyecto
+                    const cards = Array.from(document.querySelectorAll('.project-card'));
+                    const index = cards.indexOf(el);
+                    if (index % 2 === 0) {
+                        el.classList.add('slide-from-right');
+                    } else {
+                        el.classList.add('slide-from-left');
+                    }
+                }
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

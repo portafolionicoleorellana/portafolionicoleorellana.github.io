@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ========= CONFIGURACIÓN GENERAL Y FUENTES ========= */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.logo1{
+    height: 3rem;
+}
+
+/* ========= CINTA DE SERVICIOS (LA PRIMERA) ========= */
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    padding: 0.3rem 0;
+    box-sizing: border-box;
+}
+
+.ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation: ticker-scroll 200s linear infinite;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.ticker-separator {
+    color: #ef711d; /* Tu color personalizado */
+    font-size: 1.5rem;
+    margin: 0 1rem;
+     font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ========= BANNER Y ELEMENTOS FLOTANTES ========= */
+.clave {
+    color: #ef711d;
+    font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.floating-element {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-25px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ========= SECCIÓN "QUIÉN SOY" ========= */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ========= CINTA DE HERRAMIENTAS (LA SEGUNDA) ========= */
+.tools-ticker-wrap {
+            background-color: #000;
+            width: 100%;
+            overflow: hidden;
+            padding: 1.5rem 0;
+        }
+
+        .tools-ticker-move {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            padding-right: 100%;
+            animation: ticker-scroll 80s linear infinite;
+        }
+
+        .tool-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 0 2.5rem;
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+        .tool-item img {
+            height: 2.5rem; /* 40px */
+            width: 6rem; /* 96px */
+            object-fit: contain; /* Mantiene la proporción de la imagen dentro del contenedor */
+        }
+        .tool-item span {
+            color: #e5e7eb; /* gris claro */
+        }
+
+/* ========= ANIMACIÓN DE DESPLAZAMIENTO (USADA POR AMBAS CINTAS) ========= */
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* ========= ANIMACIÓN DE DESLIZAMIENTO EN SCROLL ========= */
+.project-card {
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.3s ease-out;
+    display: flex; /* Asegura que el enlace se comporte como un flex container */
+}
+
+.project-card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+}
+
+.project-card.is-visible:hover {
+    transform: translateY(-8px) translateX(0) !important; /* Asegura que el hover funcione bien con la animación de entrada */
+}
+
+.slide-from-left {
+    transform: translateX(-100px);
+}
+
+.slide-from-right {
+    transform: translateX(100px);
+}
+
+.project-card.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* ========= ESTILOS FORMULARIO DE CONTACTO ========= */
+.contact-form input, .contact-form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #A0AEC0; /* gray-500 */
+    color: white;
+    transition: border-color 0.3s;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-bottom-color: #ef711d; /* Tu color personalizado */
+}
+.contact-form ::placeholder {
+    color: #A0AEC0; /* gray-500 */
+}
+/* ========= NUEVAS ANIMACIONES ========= */
+.animate-on-load, .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-load.is-visible, .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
